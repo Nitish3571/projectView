@@ -30,6 +30,12 @@
     /* transform: 360deg; */
     cursor: pointer;
   }
+  @media only screen and (max-width: 600px) {
+    .carousel-item {
+      transform: rotate(calc(var(--i) * 5deg)) translateY(300px) rotate(calc(var(--i) * -5deg));
+      }
+    
+  }
   
   .carousel-item img {
     width: 150px;
